@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="inputtext" readonly>
+    <div id="button-box">
+      <button class="button" onclick="calValue='';
+      document.querySelector('#inputtext').value = calValue;">C</button>
+
+      <button class="button" onclick="calValue=calValue + '1';
+      document.querySelector('#inputtext').value = calValue;">1</button>
+      
+      <button class="button" onclick="calValue= calValue + '2';
+      document.querySelector('#inputtext').value = calValue;">2</button>
+      
+      <button class="button" onclick="calValue = calValue + '+';
+      document.querySelector('#inputtext').value = calValue;">+</button>
+      
+      <button class="button" onclick="calValue= calValue + '3';
+      document.querySelector('#inputtext').value = calValue;">3</button>
+      
+      <button class="button" onclick="calValue= calValue + '4';
+      document.querySelector('#inputtext').value = calValue;">4</button>
+      
+      <button class="button" onclick="calValue= calValue + '-';
+      document.querySelector('#inputtext').value = calValue;">-</button>
+      
+      <button class="button" onclick="calValue= calValue + '5';
+      document.querySelector('#inputtext').value = calValue;">5</button>
+      
+      <button class="button" onclick="calValue= calValue + '6';
+      document.querySelector('#inputtext').value = calValue;">6</button>
+      
+      <button class="button" onclick="calValue= calValue + '*';
+      document.querySelector('#inputtext').value = calValue;">*</button>
+      
+      <button class="button" onclick="calValue= calValue + '7';
+      document.querySelector('#inputtext').value = calValue;">7</button>
+      
+      <button class="button" onclick="calValue= calValue + '8';
+      document.querySelector('#inputtext').value = calValue;">8</button>
+      
+      <button class="button" onclick="calValue= calValue + '/';
+      document.querySelector('#inputtext').value = calValue;">/</button>
+      
+      <button class="button" onclick="calValue= eval(calValue);
+      document.querySelector('#inputtext').value = calValue;">=</button>
+      
+      <button class="button" onclick="calValue=calValue +'9';
+      document.querySelector('#inputtext').value = calValue;">9</button>
+      
+      <button class="button" onclick="calValue= calValue + '0';
+      document.querySelector('#inputtext').value = calValue;">0</button>
+      
+      <button class="button" onclick="calValue= calValue + '.';
+      document.querySelector('#inputtext').value = calValue;">.</button>
+    </div>
+  </div>
+  <script>
+    let calValue='';
+    document.querySelector('#inputtext').value = calValue;
+  </script>
+</body>
+</html>
